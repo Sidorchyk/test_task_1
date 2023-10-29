@@ -1,16 +1,22 @@
-# This is a sample Python script.
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Задача 1</title>
+</head>
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+<script>
+    const random = (min, max) => {
+        let rnd = Math.random() * (max - min)
+        return Math.round(rnd)
+    }
+    window.onload = () => {
+            let interval = setInterval(() => {
+                document.body.style.background = `rgb(${random(1, 255)}, ${random(1, 255)}, ${random(1, 255)})`
+            }, 300)
+    }
+</script>
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+</body>
+</html>
